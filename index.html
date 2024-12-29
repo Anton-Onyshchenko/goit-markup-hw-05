@@ -445,7 +445,7 @@
             <div class="subscribe-container">
                 <p class="social-container-title">Subscribe</p>
                 <form class="subscribe-form">
-                    <label class="subscribe-label" for="user-subscribe">
+                    <label class="subscribe-label-input" for="user-subscribe">
                         <input class="subscribe-input" type="email" name="user-subscribe" id="user-subscribe"
                             placeholder="E-mail">
                     </label>
@@ -468,67 +468,62 @@
         <div class="modal">
 
             <button class="modal-btn--close" type="button">
-                <svg class="modal-btn-icon">
+                <svg class="modal-btn-icon" width="8" height="8">
                     <use href="./images/icons/icons.svg#close"></use>
                 </svg>
             </button>
+            <p class="modal-form-title">Leave your contacts and we will call you back</p>
+            <form class="form">
+                <div class="form-container">
+                    <label class="form-label" for="user-name">Name</label>
+                    <div class="input-container">
+                        <input class="input" type="text" id="user-name" name="user-name">
+                        <svg class="input-icon">
+                            <use href="./images/icons/icons.svg#person"></use>
+                        </svg>
+                    </div>
 
-            <div class="modal-form">
-                <p class="modal-form-title">Leave your contacts and we will call you back</p>
-                <form class="form">
-                    <div class="form-container">
-                        <label class="form-label" for="user-name">Name</label>
-                        <div class="input-container">
-                            <input class="input" type="text" id="user-name" name="user-name">
-                            <svg class="input-icon">
-                                <use href="./images/icons/icons.svg#person"></use>
-                            </svg>
-                        </div>
+                    <label class="form-label" for="user-phone">Phone</label>
+                    <div class="input-container">
+                        <input class="input" type="tel" id="user-phone" name="user-phone">
+                        <svg class="input-icon">
+                            <use class="input-icon--fill" href="./images/icons/icons.svg#phone"></use>
+                        </svg>
+                    </div>
 
-                        <label class="form-label" for="user-phone">Phone</label>
-                        <div class="input-container">
-                            <input class="input" type="tel" id="user-phone" name="user-phone">
-                            <svg class="input-icon">
-                                <use class="input-icon--fill" href="./images/icons/icons.svg#phone"></use>
-                            </svg>
-                        </div>
-
-                        <label class="form-label" for="user-email">Email</label>
-                        <div class="input-container">
-                            <input class="input" type="email" id="user-email" name="user-email">
-                            <svg class="input-icon">
-                                <use href="./images/icons/icons.svg#email"></use>
-                            </svg>
-                        </div>
-
-
-                        <label class="form-label" for="user-comment">Comment</label>
-                        <div class="input-container">
-                            <textarea class="input-textarea" id="user-comment" placeholder="Text input"></textarea>
-                        </div>
-
+                    <label class="form-label" for="user-email">Email</label>
+                    <div class="input-container">
+                        <input class="input" type="email" id="user-email" name="user-email">
+                        <svg class="input-icon">
+                            <use href="./images/icons/icons.svg#email"></use>
+                        </svg>
                     </div>
 
 
-                    <div class="checkbox-container">
-                        <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
-                            value="true">
-                        <label class="label" for="user-privacy">
-                            <span class="label-span">
-                                <svg class="label-svg">
-                                    <use class="label-icon" href="./images/icons/icons.svg#click"></use>
-                                </svg>
-                            </span>
-                            I accept the terms and conditions of the
-                            <a class="label-link" href="#" download>Privacy Policy</a>
-                        </label>
-
+                    <label class="form-label" for="user-comment">Comment</label>
+                    <div class="input-container">
+                        <textarea class="input-textarea" id="user-comment" placeholder="Text input"></textarea>
                     </div>
 
-                    <button class="form-btn" type="submit">Send</button>
-                </form>
-            </div>
+                </div>
 
+
+                <div class="checkbox-container">
+                    <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true">
+                    <label class="label" for="user-privacy">
+                        <span class="label-span">
+                            <svg class="label-svg">
+                                <use class="label-icon" href="./images/icons/icons.svg#click"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="label-link" href="#" download>Privacy Policy</a>
+                    </label>
+
+                </div>
+
+                <button class="form-btn" type="submit">Send</button>
+            </form>
         </div>
 
     </div>
