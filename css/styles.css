@@ -522,6 +522,10 @@ fill: #ffffff;
     margin-bottom: 8px;
 }
 
+.form-container:nth-child(4){
+    margin-bottom: 16px;
+}
+
 .form-label{
     font-size: 12px;
     line-height: 1.17;
@@ -534,7 +538,6 @@ fill: #ffffff;
 
 .input-container{
     position: relative;
-    margin-bottom: 8px;
 }
 
 
@@ -584,12 +587,20 @@ fill: #ffffff;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-textarea:focus{
+    border-color: #4D5AE5;
+}
+
+
 .checkbox-container{
     margin-bottom: 24px;
 }
 
 .label{
     font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
 }
 
 .label-link{
@@ -629,4 +640,9 @@ input[type="checkbox"]:checked+label .label-span{
     height: 56px;
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    cursor: pointer;
+
 }
